@@ -46,7 +46,7 @@ sudo chmod +x /usr/local/bin/stop-containers.sh
 
 [Unit]
 Description=Milvus Containers
-After=docker.service
+After=docker.service    #if installed by snap use this docker.dockerd not docker.service
 Requires=docker.service
 
 [Service]
